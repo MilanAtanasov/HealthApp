@@ -23,7 +23,7 @@
 
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,6 +31,7 @@
         android:layout_marginBottom="16dp"
         app:layout_anchor="@id/bottomAppBar"
         app:srcCompat="@android:drawable/ic_dialog_email" />
+    -->
 
 
     <!-- Note: A RecyclerView can also be used -->
@@ -41,12 +42,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         style="@style/Widget.Material3.BottomAppBar"
-        android:backgroundTint="@color/white"
-        app:fabAnimationMode="slide"
-        app:fabCradleMargin="10dp"
-        app:fabCradleRoundedCornerRadius="10dp"
-        app:fabCradleVerticalOffset="10dp"
-        app:hideOnScroll="true"
         app:menu="@menu/bottom_app_bar"
         />
 
