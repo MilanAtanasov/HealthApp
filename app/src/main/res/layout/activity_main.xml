@@ -19,7 +19,91 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/content_main" />
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.Material3.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_bottom_app_bar_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/stats_btn"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/outline_auto_graph_24"
+                app:iconSize="50dp"
+                app:iconTint="@color/colorPrimaryAccent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/accelerator"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/outline_settings_24"
+                app:iconSize="50dp"
+                app:iconTint="@color/colorPrimaryAccent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dashboard"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/baseline_home_24"
+                app:iconSize="50dp"
+                app:iconTint="@color/colorPrimaryAccent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/calendar_btn"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/outline_calendar_month_24"
+                app:iconSize="50dp"
+                app:iconTint="@color/colorPrimaryAccent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/info_btn"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/outline_info_24"
+                app:iconSize="50dp"
+                app:iconTint="@color/colorPrimaryAccent"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
 
 
 
@@ -36,13 +120,5 @@
 
     <!-- Note: A RecyclerView can also be used -->
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomAppBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        style="@style/Widget.Material3.BottomAppBar"
-        app:menu="@menu/bottom_app_bar"
-        />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
