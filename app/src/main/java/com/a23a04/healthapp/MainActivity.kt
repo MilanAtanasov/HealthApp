@@ -11,6 +11,10 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import com.a23a04.healthapp.databinding.ActivityMainBinding
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.FrameLayout;
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +33,18 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
+
+        /*
+        val inflater = LayoutInflater.from(this)
+        val view = inflater.inflate(R.layout.activity_main, null)
+        val frameLayout = view.findViewById<FrameLayout>(R.id.nav_host_fragment_content_main)
+        frameLayout.setFitsSystemWindows(false)
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View newContent = inflater.inflate(R.layout.new_content_layout, null);
+        FrameLayout contentContainer = findViewById(R.id.content_container);
+        contentContainer.removeAllViews();
+        contentContainer.addView(newContent);
+         */
 
         /* binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)

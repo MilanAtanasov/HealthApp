@@ -2,4 +2,33 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimaryAccent">#FFFFFFFF</color>
+    <color name="colorNavBar">#B0BEC5</color>
+
 </resources>
+
+<!-- Colors:
+turquoise: #40E0D0
+turquoise: #00CED1
+purple: #800080
+purple: #8A2BE2
+purple: #9932CC
+
+Material Design Colors in palettes and hex values:
+
+Give me an example of a color palette in Material Design for an app! the color names and hex
+values for the colors in the palette.
+
+Primary color: #3F51B5
+Primary dark color: #303F9F
+Accent color: #FF4081
+Primary text: #212121
+Secondary text: #727272
+Icons: #FFFFFF
+Divider: #B6B6B6
+
+
+
+
+
+-->
